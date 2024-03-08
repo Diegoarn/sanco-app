@@ -1,1 +1,4 @@
 <p>publica works!</p>
+<div *ngFor="let proyecto of proyectos" [routerLink]="['/proyectos-publica', proyecto.nombre]">
+    <app-card [proyecto]="proyecto"></app-card>
+  </div>

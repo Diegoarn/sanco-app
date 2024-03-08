@@ -7,6 +7,7 @@ import { PublicaComponent } from './pages/publica/publica.component';
 import { SingularesComponent } from './pages/singulares/singulares.component';
 import { UnifamiliarComponent } from './pages/unifamiliar/unifamiliar.component';
 import { NicosiaComponent } from './pages/proyectos-privada/nicosia/nicosia.component';
+import { ProyectosPublicaComponent } from './pages/proyectos-publica/proyectos-publica.component';
 
 export const routes: Routes = [
     {
@@ -42,6 +43,12 @@ export const routes: Routes = [
         component: NicosiaComponent
 
     },
+    {
+        path: 'proyectos-publica/:proyecto',
+        component: ProyectosPublicaComponent
+
+    },
+
 
     {
         path:'**',
